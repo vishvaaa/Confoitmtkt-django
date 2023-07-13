@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <!-- Head content here -->
+</head>
+
+<body>
+    <header>
+        <!-- Header content here -->
+    </header>
+
+    <section class="help-line">
+        <h1>Help-line</h1>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="bx bxs-phone"></i>
+                <span id="phone">Loading...</span>
+            </div>
+            <div class="contact-item">
+                <i class="bx bxs-envelope"></i>
+                <span id="email">Loading...</span>
+            </div>
+            <div class="contact-item">
+                <i class="bx bxs-map"></i>
+                <span id="address">Loading...</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+    <script>
+        // Simulate loading the contact information
+        setTimeout(function () {
+            const phoneSpan = document.getElementById('phone');
+            const emailSpan = document.getElementById('email');
+            const addressSpan = document.getElementById('address');
+
+            // Set the contact information
+            phoneSpan.textContent = '+1 123 456 7890';
+            emailSpan.textContent = 'support@example.com';
+            addressSpan.textContent = '123 Main Street, City, Country';
+        }, 2000);
+    </script>
+</body>
+
+</html>

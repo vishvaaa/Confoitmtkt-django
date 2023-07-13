@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+  <title>Services | Train Booking</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  <script src="{% static 'services.js' %}"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="services-section">
+    <h1>Our Services</h1>
+    <div class="service">
+      <img src="service1.jpg" alt="Service 1">
+      <h2>Online Booking</h2>
+      <p>Book your train tickets online with ease. Our user-friendly platform allows you to search for available trains, compare prices, and make secure bookings.</p>
+    </div>
+    <div class="service">
+      <img src="service2.jpg" alt="Service 2">
+      <h2>Seat Selection</h2>
+      <p>Choose your preferred seats while booking. Whether you prefer a window seat or need special accommodations, we strive to provide you with a comfortable journey.</p>
+    </div>
+    <div class="service">
+      <img src="service3.jpg" alt="Service 3">
+      <h2>Real-Time Updates</h2>
+      <p>Stay informed about your train journey with real-time updates. Get notifications about delays, cancellations, or any other important information regarding your trip.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Train Booking. All rights reserved.</p>
+  </footer>
+</body>
+</html>
